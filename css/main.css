@@ -390,7 +390,7 @@ aside {
 
 @media only screen and (min-width: 768px)  {
 
-    /* General Styles */
+    /*-------- General Styles --------*/
     .content-wrapper  {
         max-width: 640px;
         margin: 100px 0;
@@ -476,6 +476,42 @@ aside {
     footer .copyright {
         width: 100%;
     }
+
+    /*-------- ABOUT PAGE --------*/
+    .mission-content  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mission-content p  {
+        width: 40%;
+    }
+
+    .contact-section .content-wrapper h2  {
+        width: 80%;
+    }
+
+    .contact-content  {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    /*-------- FAQ PAGE --------*/
+    .faq .content-wrapper {
+        justify-content: space-between;
+    }
+
+    .faq-content  {
+        flex-basis: 40%;
+    }
+
+    .faq h2 {
+        width: 100%;
+    }
+
+
 }
 
 @media only screen and (min-width: 1200px)  {
