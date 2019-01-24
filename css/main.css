@@ -98,6 +98,52 @@ textarea {
    ========================================================================== */
 
 
+/* -------- GENERAL STYLES -------- */
+
+
+html  {
+    font-size: 16px;
+}
+
+body  {
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+ul,
+ol  {
+    list-style-type: none;
+}
+
+a {
+    color: #e2e3ed;
+    text-decoration: none;
+}
+
+h2  {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.875em;
+}
+
+h3,
+h4  {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 20px 0;
+    font-size: 1.125em;
+}
+
+p   {
+    font-size: .875em;
+    line-height: 1.285;
+}
+
+address {
+    font-style: normal;
+}
+
 .content-wrapper  {
     width: 90%;
     margin: 50px 0;
@@ -109,6 +155,7 @@ textarea {
 
 header,
 footer  {
+    background-color: #202322;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,20 +167,24 @@ header  {
 }
 
 header .content-wrapper {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    margin: 0;
 }
 
 .header-divider  {
+    background: #3a3a3a;
     width: 100%;
     height: 1px;
     margin: 10px 0 20px 0;
 }
 
 header nav  {
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,11 +195,15 @@ header nav  {
 header nav ul {
     display: flex;
     justify-content: space-around;
-    list-style: none;
     width: 100%;
 }
 
+header nav ul li  {
+    font-size: 1.125em;
+}
+
 footer  {
+    text-align: center;
     flex-direction: column;
 }
 
