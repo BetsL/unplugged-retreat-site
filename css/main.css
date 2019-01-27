@@ -702,7 +702,10 @@ input[type=button]  {
         width: 40%;
     }
 
-    /*.contact-section .content-wrapper {
+    .contact-section .content-wrapper  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 100px 0;
     }
 
@@ -712,19 +715,27 @@ input[type=button]  {
 
     .contact-content  {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: row wrap;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        width: 100%;
     }
 
     .contact-content h4 {
-        font-size: 1.5em;
-        width: inherit;
+        font-size: 1.3em;
     }
 
     .contact-content p  {
-        width: inherit;
-    }*/
+        width: 40%;
+    }
+
+    /*.contact-section .content-wrapper {
+        margin: 100px 0;
+    }
+
+    .contact-section .content-wrapper h2  {
+        width: 80%;
+    }
+    */
 
     /*-------- FAQ PAGE --------*/
     .faq .content-wrapper {
