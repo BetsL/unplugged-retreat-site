@@ -146,6 +146,10 @@ address {
 }
 
 .content-wrapper  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     width: 90%;
     margin: 50px 0;
 }
@@ -188,19 +192,21 @@ header nav  {
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
     width: 60%;
 }
 
 header nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-flow: row wrap;
     width: 100%;
+    padding: 0;
 }
 
 header nav ul li  {
     font-size: 1.125em;
+    font-weight: normal;
+    display: flex;
 }
 
 footer  {
@@ -213,8 +219,19 @@ footer p  {
 }
 
 footer .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
     width: 55%;
     margin: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 footer .contact {
@@ -257,9 +274,14 @@ footer .copyright {
 
 .hero-area h1 {
     font-size: 2.25em;
+    font-weight: normal;
 }
 
 /* Aside */
+
+aside .content-wrapper  {
+    margin: 30px 20px;
+}
 
 aside {
     background-color: #527158;
@@ -270,7 +292,7 @@ aside {
 }
 
 aside .form {
-    margin-top: 30px;
+    margin: 30px;
 }
 
 input[type=text]  {
@@ -302,7 +324,14 @@ input[type=button]  {
     flex-flow: row wrap;
 }
 
+.features .content-wrapper  {
+    margin: 50px 20px;
+}
+
 .features h2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 60px;
 }
 
@@ -332,6 +361,10 @@ input[type=button]  {
     flex-flow: row wrap;
 }
 
+.reviews .content-wrapper {
+    margin: 50px 20px;
+}
+
 .reviews h2 {
     margin-bottom: 40px;
     line-height: 1;
@@ -339,6 +372,10 @@ input[type=button]  {
 
 .reviews h3 {
     width: 55%;
+    margin: 20px 0;
+}
+
+.reviews p  {
     margin: 20px 0;
 }
 
@@ -352,6 +389,7 @@ input[type=button]  {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding: 50px 20px;
 }
 
 .contact-section  {
@@ -360,10 +398,16 @@ input[type=button]  {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    padding: 50px 20px;
+}
+
+.contact-content h4 {
+    font-weight: lighter;
 }
 
 .contact-content p  {
     margin: 0;
+    font-weight: lighter;
 }
 
 
@@ -379,7 +423,7 @@ input[type=button]  {
 }
 
 .faq .content-wrapper {
-    margin: 50px 0 0 0;
+    margin: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -488,13 +532,17 @@ input[type=button]  {
    ========================================================================== */
 
 
-@media only screen and (min-width:768px)  {
+@media only screen and (min-width: 768px)  {
     /* Tablet styles here */
 
     /*-------- General Styles --------*/
     .content-wrapper  {
-        max-width: 640px;
-        margin: 100px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        margin: 50px auto;
+        width: 90%;
     }
 
     h2  {
@@ -513,7 +561,7 @@ input[type=button]  {
     }
 
     header .content-wrapper {
-        width: 100%;
+        width: 70%;
         justify-content: space-between;
     }
 
@@ -537,7 +585,11 @@ input[type=button]  {
     .hero-area h1 {
         font-size: 3em;
         line-height: 1;
-        margin: 0;
+        margin: 80px 0;
+    }
+
+    .hero-area {
+        width: 100%;
     }
 
     /* Aside */
@@ -555,8 +607,15 @@ input[type=button]  {
     }
 
     /* Features */
+    .features .content-wrapper  {
+        margin-bottom: 90px;
+    }
+
     .features h2  {
-        margin: 0 20px 20px 0;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 90px 0px 20px 0;
     }
 
     .features article {
@@ -572,6 +631,10 @@ input[type=button]  {
     }
 
     /* Reviews */
+    .reviews .content-wrapper {
+        margin: 90px 0;
+    }
+
     .reviews article  {
         display: flex;
         justify-content: space-between;
@@ -594,17 +657,21 @@ input[type=button]  {
     footer .content-wrapper {
         width: 65%;
         margin: 100px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
     }
 
     footer .footer-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        flex-direction: row;
+        flex-flow: row wrap;
     }
 
     footer .contact {
-        margin-bottom: 0;
+        margin-bottom: 50px;
     }
 
     footer h4 {
