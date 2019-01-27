@@ -688,6 +688,10 @@ input[type=button]  {
     }
 
     /*-------- ABOUT PAGE --------*/
+    .mission .content-wrapper {
+        margin: 100px 0;
+    }
+
     .mission-content  {
         display: flex;
         justify-content: space-between;
@@ -698,23 +702,34 @@ input[type=button]  {
         width: 40%;
     }
 
+    /*.contact-section .content-wrapper {
+        margin: 100px 0;
+    }
+
     .contact-section .content-wrapper h2  {
         width: 80%;
     }
 
     .contact-content  {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: row wrap;
     }
 
     .contact-content h4 {
         font-size: 1.5em;
+        width: inherit;
     }
+
+    .contact-content p  {
+        width: inherit;
+    }*/
 
     /*-------- FAQ PAGE --------*/
     .faq .content-wrapper {
         justify-content: space-between;
+        margin: 100px 0;
     }
 
     .faq-content  {
@@ -729,6 +744,10 @@ input[type=button]  {
     .faq p  {
         font-size: .875em;
         line-height: 1.125;
+    }
+
+    footer .content-wrapper {
+        margin: 85px 0;
     }
 }
 
