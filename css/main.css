@@ -654,20 +654,24 @@ input[type=button]  {
     }
 
     /* Footer */
+    footer  {
+        width: 66.6%;
+    }
+
     footer .content-wrapper {
-        width: 65%;
         margin: 100px 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        flex-flow: row wrap;
+        border: 1px solid red;
     }
 
     footer .footer-content {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         flex-flow: row wrap;
+        width: 100%;
+        border: 1px solid white;
     }
 
     footer .contact {
@@ -707,17 +711,21 @@ input[type=button]  {
         justify-content: center;
         align-items: center;
         margin: 100px 0;
+        border: 1px solid orange;
     }
 
     .contact-section .content-wrapper h2  {
-        width: 80%;
+        display: flex;
+        justify-content: flex-start;
+        border: 1px solid red;
     }
 
     .contact-content  {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-flow: row wrap;
         width: 100%;
+        border: 1px solid white;
     }
 
     .contact-content h4 {
