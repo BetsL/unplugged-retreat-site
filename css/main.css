@@ -776,7 +776,7 @@ input[type=button]  {
 
     /*-------- GENERAL STYLES -------- */
     .content-wrapper  {
-        max-width: 960px;
+        max-width: 100%;
     }
 
     h2  {
@@ -796,26 +796,43 @@ input[type=button]  {
     /* Hero */
     .hero-area h1 {
         font-size: 3.75em;
-        width: 60%;
+        width: 80%;
+        /*padding: 50px 0 0 120px;*/
     }
 
     /* Aside */
     aside .content-wrapper  {
+        display: flex;
         justify-content: space-around;
+        width: 89%;
+        /*margin: 50px 100px;*/
     }
 
-    aside .content-wrapper .form-description,
+    aside .content-wrapper  {
+        display: flex;
+        justify-content: space-around;
+        /*padding: 0 0 0 10px;*/
+        width: 66%;
+        border: 1px solid red;
+    }
+
+    aside .form-description,
     aside .content-wrapper .form  {
-        width: 30%;
+        width: 33.3%;
     }
 
-    .form-description p {
+    /*aside .form-description {
+        width: 66%;
+        border: 1px solid red;
+    }*/
+
+    aside .form-description p {
         font-size: 1.125em;
     }
 
     /* Features */
     .features h2  {
-        width: 70%;
+        width: 80%;
     }
 
     .features article {
