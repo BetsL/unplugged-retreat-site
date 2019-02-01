@@ -141,6 +141,14 @@ p   {
     line-height: 1.285;
 }
 
+img {
+    width: 100%;
+}
+
+figure  {
+    margin: 0;
+}
+
 address {
     font-style: normal;
 }
@@ -173,6 +181,14 @@ header  {
 
 header .content-wrapper {
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+header figure {
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,6 +283,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area  {
+    background: url('../img/unplugged-retreat.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -319,6 +339,9 @@ input[type=button]  {
 /* Features */
 
 .features {
+    background: url('../img/unplugged-retreat-features.jpg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -363,6 +386,10 @@ input[type=button]  {
 
 .reviews .content-wrapper {
     margin: 50px 20px;
+}
+
+.reviews article figure {
+    width: 100%;
 }
 
 .reviews h2 {
@@ -561,9 +588,13 @@ input[type=button]  {
     }
 
     header .content-wrapper {
-        width: 70%;
+        width: 60%;
         justify-content: space-between;
     }
+
+    /*header figure {
+        width: 30%;
+    }*/
 
     header figure {
         width: 30%;
@@ -644,6 +675,7 @@ input[type=button]  {
         width: 90%;
     }
 
+    .reviews article figure,
     .reviews article div  {
         width: 49%;
     }
@@ -801,24 +833,23 @@ input[type=button]  {
     }
 
     /* Aside */
-    aside .content-wrapper  {
+    /*aside .content-wrapper  {
         display: flex;
         justify-content: space-around;
         width: 89%;
-        /*margin: 50px 100px;*/
-    }
+    }*/
 
     aside .content-wrapper  {
         display: flex;
         justify-content: space-around;
         /*padding: 0 0 0 10px;*/
-        width: 66%;
+        width: 70%;
         border: 1px solid red;
     }
 
     aside .form-description,
     aside .content-wrapper .form  {
-        width: 33.3%;
+        width: 35%;
     }
 
     /*aside .form-description {
@@ -831,6 +862,13 @@ input[type=button]  {
     }
 
     /* Features */
+    .features .content-wrapper h2  {
+        display: flex;
+        /*justify-content: flex-start;*/
+        text-align: left;
+        width: 95%;
+    }
+
     .features h2  {
         width: 80%;
     }
@@ -842,9 +880,17 @@ input[type=button]  {
     /* Reviews */
     .reviews article div  {
         width: 42%;
+        /*width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;*/
     }
 
     /*-------- ABOUT PAGE --------*/
+    /*.mission .content-wrapper {
+        padding: 120px 100px;
+    }*/
+
     .mission h2,
     .contact-section .content-wrapper h2  {
         width: 100%;
