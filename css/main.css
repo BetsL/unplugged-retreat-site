@@ -467,10 +467,10 @@ input[type=button]  {
     padding: 50px 20px;
 }
 
-.map  {
+.map figure  {
     width: 100%;
     height: 0;
-    padding-bottom: 75%;
+    padding-bottom: 93%;
     overflow: hidden;
     position: relative;
 }
@@ -514,7 +514,7 @@ input[type=button]  {
 }
 
 .faq .content-wrapper {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -532,7 +532,7 @@ input[type=button]  {
 
 .faq-content h4 {
     line-height: 1.333;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 
