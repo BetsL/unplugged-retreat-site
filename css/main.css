@@ -115,6 +115,8 @@ body  {
 ul,
 ol  {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -126,6 +128,7 @@ h2  {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.875em;
+    margin: 0;
 }
 
 h3,
@@ -154,10 +157,10 @@ address {
 }
 
 .content-wrapper  {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row wrap;*/
     width: 90%;
     margin: 50px 0;
 }
@@ -188,7 +191,7 @@ header .content-wrapper {
 }
 
 header figure {
-    width: 65%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,21 +211,24 @@ header nav  {
     text-transform: uppercase;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 60%;
 }
 
 header nav ul {
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
     width: 100%;
-    padding: 0;
+    padding: 0;*/
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 header nav ul li  {
     font-size: 1.125em;
     font-weight: normal;
-    display: flex;
 }
 
 footer  {
@@ -235,24 +241,28 @@ footer p  {
 }
 
 footer .content-wrapper {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
+    flex-flow: row wrap;*/
     width: 55%;
     margin: 50px 0;
 }
 
-.footer-content {
+/*.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-}
+}*/
 
 footer .contact {
     margin-bottom: 50px;
 }
+
+/*footer .social  {
+    padding: 50px 0;
+}*/
 
 footer .social-icons  {
     display: flex;
@@ -268,6 +278,8 @@ footer .social-icons p  {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*margin: 1.1em;
+    padding: 1.1em;*/
 }
 
 footer .social-icons p i  {
@@ -297,12 +309,20 @@ footer .copyright {
     min-height: 500px;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-flow: row wrap;
+    padding: 50px 20px;
 }
 
 .hero-area h1 {
-    font-size: 2.25em;
+    font-size: 2.5em;
+    line-height: 1.1em;
     font-weight: normal;
+    /*display: flex;
+    justify-content: center;
+    align-items: inherit;*/
+    margin: 0;
+    width: 100%;
 }
 
 /* Aside */
@@ -319,8 +339,13 @@ aside {
     flex-flow: row wrap;
 }
 
+/*aside .form-description h3 p  {
+    font-size: 2em;
+}*/
+
 aside .form {
-    margin: 30px;
+    /*margin: 30px;*/
+    width: 100%;
 }
 
 input[type=text]  {
@@ -328,6 +353,8 @@ input[type=text]  {
     width: 100%;
     color: #2a423a;
     font-style: italic;
+    font-size: 1.125em;
+    padding: 20px 0;
 }
 
 input[type=button]  {
@@ -360,10 +387,14 @@ input[type=button]  {
 }
 
 .features h2  {
-    display: flex;
+    /*display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 60px;*/
     margin-bottom: 60px;
+    font-size: 2.1em;
+    line-height: 1.1em;
+    font-weight: normal;
 }
 
 .features article {
@@ -399,6 +430,8 @@ input[type=button]  {
 
 .reviews .content-wrapper {
     margin: 50px 20px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .reviews article figure {
@@ -407,7 +440,9 @@ input[type=button]  {
 
 .reviews h2 {
     margin-bottom: 40px;
-    line-height: 1;
+    font-size: 2.2em;
+    line-height: 1.1em;
+    font-weight: normal;
 }
 
 .reviews h3 {
