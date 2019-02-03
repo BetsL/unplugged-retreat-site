@@ -645,9 +645,7 @@ input[type=button]  {
     .hero-area h1 {
         font-size: 3em;
         line-height: 1;
-        margin: 0;
-        margin: 50px 0 0 0;
-        width: 80%;
+        margin: 0 70px;
     }
 
     /* Aside */
@@ -665,13 +663,6 @@ input[type=button]  {
         margin: 0;
     }
 
-    aside .content-wrapper h3 {
-        font-size: 1.5em;
-    }
-
-    aside .form-description p {
-        line-height: 1.5em;
-    }
 
     /* Features */
     .features .content-wrapper  {
@@ -680,7 +671,7 @@ input[type=button]  {
 
     .features h2  {
         margin: 0 20px 20px 0;
-        font-size: 2.5em;
+        /*font-size: 2.5em;*/
     }
 
     .features article {
@@ -707,7 +698,7 @@ input[type=button]  {
 
     .reviews h2 {
         width: 80%;
-        font-size: 2.5em;
+        /*font-size: 2.5em;*/
     }
 
     .reviews article figure,
@@ -720,10 +711,10 @@ input[type=button]  {
         margin: 0;
     }
 
-    .reviews p  {
+    /*.reviews p  {
         line-height: 1.5em;
         width: 95%;
-    }
+    }*/
 
     /* Footer */
     footer  {
@@ -766,7 +757,7 @@ input[type=button]  {
 
     /*-------- ABOUT PAGE --------*/
     .mission .content-wrapper {
-        margin: 100px 0;
+        margin: 70px 0;
     }
 
     .mission-content  {
@@ -778,7 +769,7 @@ input[type=button]  {
 
     .mission-content p  {
         width: 40%;
-        line-height: 1.5em;
+        /*line-height: 1.5em;*/
     }
 
     .contact-section .content-wrapper  {
@@ -786,7 +777,7 @@ input[type=button]  {
         justify-content: flex-start;
         align-items: center;
         flex-flow: row wrap;
-        margin: 100px 0;
+        margin: 70px 0;
     }
 
     .contact-section .content-wrapper h2  {
@@ -794,8 +785,8 @@ input[type=button]  {
         justify-content: flex-start;
         padding: 0;
         text-align: left;
-        width: 70%;
-        font-size: 2.5em;
+        width: 80%;
+        /*font-size: 2.5em;*/
     }
 
     .contact-content  {
@@ -811,10 +802,10 @@ input[type=button]  {
         font-size: 1.5em;
     }
 
-    .contact-content p  {
+    /*.contact-content p  {
         font-size: 1.1em;
         line-height: 1.5em;
-    }
+    }*/
 
 
     /*-------- FAQ PAGE --------*/
@@ -831,13 +822,19 @@ input[type=button]  {
         width: 100%;
     }
 
-    .faq h4 {
+    /*.faq h4 {
         font-size: 1.5em;
     }
 
     .faq p  {
         font-size: 1.1em;
         line-height: 1.5;
+    }*/
+
+    .faq h4,
+    .faq p  {
+        font-size: .875em;
+        line-height: 1.125;
     }
 
     footer .content-wrapper {
