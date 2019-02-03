@@ -229,7 +229,7 @@ footer  {
 
 footer p  {
     margin: 0;
-    line-height: 1.8em;
+    /*line-height: 1.8em;*/
 }
 
 footer .content-wrapper {
@@ -283,24 +283,28 @@ footer .copyright {
     background-position: center;
     min-height: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-flow: row wrap;
     padding: 50px 20px;
 }
 
 .hero-area h1 {
-    font-size: 2.5em;
+    font-size: 2.25em;
     line-height: 1.1em;
     font-weight: normal;
-    margin: 0;
     width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0;
 }
 
 /* Aside */
 
 aside .content-wrapper  {
     margin: 30px 20px;
+    padding-bottom: 30px;
 }
 
 aside {
@@ -355,8 +359,8 @@ input[type=button]  {
 
 .features h2  {
     margin-bottom: 60px;
-    font-size: 2.1em;
-    line-height: 1.1em;
+    /*font-size: 2.1em;
+    line-height: 1.1em;*/
     font-weight: normal;
 }
 
@@ -403,8 +407,8 @@ input[type=button]  {
 
 .reviews h2 {
     margin-bottom: 40px;
-    font-size: 2.2em;
-    line-height: 1.1em;
+    /*font-size: 2.2em;*/
+    line-height: 1em;
     font-weight: normal;
 }
 
@@ -433,7 +437,7 @@ input[type=button]  {
 .map figure  {
     width: 100%;
     height: 0;
-    padding-bottom: 93%;
+    padding-bottom: 56.25%;
     overflow: hidden;
     position: relative;
 }
@@ -865,51 +869,53 @@ input[type=button]  {
     }
 
     /* Hero */
+    .hero-area  {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .hero-area .content-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-flow: row wrap;
+        margin-left: 100px;
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+
     .hero-area h1 {
         font-size: 3.75em;
-        width: 80%;
-        /*padding: 50px 0 0 120px;*/
+        width: 66%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 0;
     }
 
     /* Aside */
-    /*aside .content-wrapper  {
-        display: flex;
-        justify-content: space-around;
-        width: 89%;
-    }*/
-
     aside .content-wrapper  {
         display: flex;
         justify-content: space-around;
-        /*padding: 0 0 0 10px;*/
-        width: 70%;
-        border: 1px solid red;
     }
 
-    aside .form-description,
+    aside .content-wrapper .form-description,
     aside .content-wrapper .form  {
         width: 35%;
     }
-
-    /*aside .form-description {
-        width: 66%;
-        border: 1px solid red;
-    }*/
 
     aside .form-description p {
         font-size: 1.125em;
     }
 
     /* Features */
-    .features .content-wrapper h2  {
-        display: flex;
-        /*justify-content: flex-start;*/
-        text-align: left;
-        width: 95%;
+    .features h2  {
+        width: 90%;
+        margin-top: 50px;
     }
 
-    .features h2  {
-        width: 80%;
+    .features-items {
+        margin: 50px 0;
     }
 
     .features article {
@@ -917,19 +923,19 @@ input[type=button]  {
     }
 
     /* Reviews */
+    .reviews h2 {
+        margin-top: 50px;
+    }
+
+    .reviews article  {
+        margin: 50px 0;
+    }
+
     .reviews article div  {
         width: 42%;
-        /*width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        text-align: right;*/
     }
 
     /*-------- ABOUT PAGE --------*/
-    /*.mission .content-wrapper {
-        padding: 120px 100px;
-    }*/
-
     .mission h2,
     .contact-section .content-wrapper h2  {
         width: 100%;
