@@ -877,7 +877,7 @@ input[type=button]  {
         justify-content: flex-start;
         align-items: flex-start;
         flex-flow: row wrap;
-        margin-left: 100px;
+        margin-left: 40px;
         padding-bottom: 50px;
         padding-top: 0;
     }
